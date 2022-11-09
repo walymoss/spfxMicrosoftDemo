@@ -12,6 +12,7 @@ import * as strings from 'HelloWorldWebPartStrings';
 
 export interface IHelloWorldWebPartProps {
   description: string;
+  myProperty: string;
 }
 
 export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorldWebPartProps> {
@@ -27,6 +28,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
         <h2>Well done, ${escape(this.context.pageContext.user.displayName)}!</h2>
         <div>${this._environmentMessage}</div>
         <div>Web part property value: <strong>${escape(this.properties.description)}</strong></div>
+        <div>Web part new property value: <strong>${escape(this.properties.myProperty)}</strong></div>
       </div>
       <div>
         <h3>Welcome to SharePoint Framework!</h3>
@@ -98,6 +100,9 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
               groupFields: [
                 PropertyPaneTextField('description', {
                   label: strings.DescriptionFieldLabel
+                }),
+                PropertyPaneTextField('myProperty', {
+                  label: strings.NewPropertyLabel
                 })
               ]
             }

@@ -2,6 +2,7 @@ declare interface IHelloWorldWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
   DescriptionFieldLabel: string;
+  NewPropertyLabel: string;
   AppLocalEnvironmentSharePoint: string;
   AppLocalEnvironmentTeams: string;
   AppSharePointEnvironment: string;
