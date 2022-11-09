@@ -2,7 +2,7 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+Following Microsoft Documentation about SPFX.
 
 [picture of the solution in action, if possible]
 
@@ -25,7 +25,7 @@ Short summary on functionality and used technologies.
 
 | Solution    | Author(s)                                               |
 | ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| folder name | Walter Estrada. Twitter @walychess
 
 ## Version history
 
